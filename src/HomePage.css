@@ -1,0 +1,87 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 32px;
+  background: linear-gradient(180deg, rgba(20, 22, 24, 0.9), rgba(10, 11, 12, 0.9));
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  text-align: center;
+}
+
+.home-logo {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+}
+
+.home-subtitle {
+  font-size: 14px;
+  color: #f3ead9;
+  opacity: 0.75;
+  margin: -16px 0 0;
+}
+
+.home-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.home-input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  color: #f3ead9;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.home-input::placeholder {
+  color: rgba(243, 234, 217, 0.45);
+}
+
+.home-input:focus {
+  border-color: #d4af37;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.home-fetch-btn {
+  padding: 14px 16px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #050607;
+  background: #d4af37;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.home-fetch-btn:hover:not(:disabled) {
+  background: #e8c655;
+}
+
+.home-fetch-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.home-fetch-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.home-error {
+  font-size: 13px;
+  color: #ff6b6b;
+  margin: 0;
+}
